@@ -40,13 +40,15 @@ const skills = [
   "DL"
 ];
 
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Bg */}
       <div className="absolute inset-0">
         <img
-          src="/hero-bg.jpg"
+          src={publicAsset("hero-bg.jpg")}
           alt="Hero image"
           className="w-full h-full object-cover opacity-40"
         />
@@ -141,7 +143,7 @@ export const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/profile-photo.png"
+                  src={publicAsset("profile-photo.png")}
                   alt="Pedro Machado"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />

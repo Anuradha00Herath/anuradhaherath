@@ -1,11 +1,14 @@
 import { ArrowUpRight, GitBranch } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const projects = [
   {
     title: "StyleSync",
     description:
       "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
+    image: publicAsset("projects/project1.png"),
     tags: ["React", "Typescript", "NodeJS", "PostgreSQL", "Prisma ORM", "Redux"],
     link: "#",
     github: "https://github.com/Anuradha00Herath/StyleSync",
@@ -14,7 +17,7 @@ const projects = [
     title: "Automind Education",
     description:
       "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
+    image: publicAsset("projects/project2.png"),
     tags: ["Next.js", "Firebase", "Tailwind","Payhere"],
     link: "https://online-edu-platform-frontend.vercel.app/",
     github: "https://github.com/Anuradha00Herath/OnlineEduPlatform---Frontend",
@@ -23,7 +26,7 @@ const projects = [
     title: "Fashion House",
     description:
       "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
+    image: publicAsset("projects/project3.png"),
     tags: ["React", "Redux", "Node.js", "MongoDB","Jest"],
     link: "#",
     github: "https://github.com/Anuradha00Herath/Fashion-House",
@@ -32,7 +35,7 @@ const projects = [
     title: "Akinra Ice Cream",
     description:
       "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
+    image: publicAsset("projects/project4.png"),
     tags: ["React", "TailwindCSS"],
     link: "https://www.akinra.lk/",
     github: "#",
