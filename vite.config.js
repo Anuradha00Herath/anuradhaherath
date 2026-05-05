@@ -8,7 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
-  base: command === "build" ? "/dev-personal-portfolio/" : "/",
+  base: command === "build" ? "/anuradhaherath/" : "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
